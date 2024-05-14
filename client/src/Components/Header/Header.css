@@ -1,0 +1,75 @@
+
+:root {
+    ---pink: rgba(219, 10, 91);
+}
+#header-large {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5em 0.8em;
+    background: rgb(46,42, 41) !important;
+}
+.header-logo p {
+    font-weight: bolder;
+}
+.header-logo span {
+    background: var(---pink);
+    border-radius: 5px;
+    padding: 0.1em 0.3em;
+}
+#header-large svg {
+    margin-right: 0.4em;
+}
+/* for small screens */
+.header-profile {
+    display: none;
+}
+.header-buttons {
+    display: none;
+}
+/* for small screens */
+
+@media screen and (min-width: 850px) {
+    #small-screen-nav {
+        display: none;
+    }
+    .header-buttons {
+        flex-grow: 4;
+        max-width: 600px;
+        display: block;
+    }
+    .header-profile {
+        display: block;
+    }
+    .header-buttons ul {
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-buttons button {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5em;
+    }
+    .create-character button {
+        background: var(---pink);
+        font-weight: bolder;
+        padding: 0.5em 0.6em;
+        border-radius: 5px;
+    }
+    .header-profile button {
+        display: flex;
+        align-items: center;
+        padding-top: 0.5em;
+    }
+    .active {
+        color: var(---pink) !important;
+        border-bottom: 2px solid var(---pink);
+        padding-bottom: 1em;
+    }
+    .active svg {
+        fill: var(---pink) !important;
+    }
+    .cancel-active {
+        color: var(---pink) !important;
+        background: white !important; 
+    }
+}

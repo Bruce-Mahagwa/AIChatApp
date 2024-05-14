@@ -1,0 +1,102 @@
+:root {
+    ---maroon: rgba(128, 0, 0, 1);
+    ---light-maroon: rgba(128, 0, 0, 0.7);
+    ---grey: rgba(46, 42, 41, 1);
+}
+#profile-section {
+    border-right: 5px solid var(---maroon);
+    height: max-content;
+    padding-bottom: 0;
+}
+.profile-avatar {
+    padding-top: 1em;
+}
+.profile-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.num-chats {
+   display: flex;
+   gap: 0.3em;
+}
+.num-chats small span {
+    display: inline-block;
+    margin-right: 0.5em;
+}
+.profile-more-options {
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.profile-image {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+.profile-image-container {
+    position: relative;
+    box-shadow: 0px -67px 65px 0px rgba(0,0,0,0.9) inset;
+    -webkit-box-shadow: 0px -67px 65px 0px rgba(0,0,0,0.9) inset;
+    -moz-box-shadow: 0px -67px 65px 0px rgba(0,0,0,0.9) inset;
+}
+.profile-image-container div {
+    position: absolute;
+    bottom: 1em;
+    left: 2em;
+}
+
+.profile-info {
+    background: var(---light-maroon);
+    padding-bottom: 2em;
+}
+.profile-info-options {
+    display: flex;
+    justify-content: space-between;
+    background: var(---grey);
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 10px;
+    width: 90%;
+}
+.profile-info-options div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 0.5em;
+}
+.profile-info-options div:last-child svg {
+    vertical-align: middle;
+}
+.profile-info-options div:first-child svg {
+    vertical-align: middle;
+    fill: white !important;
+}
+.num-images, .num-messages {
+    margin-left: 0.5em;
+}
+
+.profile-info-description {
+    display: flex;
+    justify-content: space-between;
+    background: var(---grey);
+    margin: 1em auto;
+    padding: 1em;
+    padding-bottom: 2em;
+    border-radius: 10px;
+    width: 90%;   
+    gap: 1em;
+}
+.profile-info-description h3 {
+    margin-bottom: 1em;
+}
+.profile-info-description p {
+    margin-bottom: 1em;
+}
+.describe-character div:first-child {
+    display: flex;
+    justify-content: space-between;
+}
+.describe-character svg {
+    vertical-align: bottom;
+}

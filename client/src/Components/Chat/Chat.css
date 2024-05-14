@@ -1,0 +1,94 @@
+:root {
+    ---maroon: rgba(128, 0, 0, 1);
+    ---light-maroon: rgba(128, 0, 0, 0.7);
+    ---grey: rgba(46, 42, 41, 1);
+    ---pink: rgba(219, 10, 91);
+}
+#chatbox {
+    padding: 1em;
+    padding-bottom: 0.1em;
+    overflow-y: scroll;
+}
+#chatbox::-webkit-scrollbar {
+    width: 10px;
+}
+#chatbox::-webkit-scrollbar-track {
+    background: var(---light-maroon);
+}
+#chatbox::-webkit-scrollbar-thumb {
+    background: var(---pink);
+    height: 10px;
+    border-radius: 10px;
+  }
+#text-box p {
+    background: var(---grey);
+    border-radius: 5px;
+    padding: 0.8em;
+    margin-bottom: 1em;
+}
+#text-box div {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+    margin-bottom: 0.4em;
+}
+#text-box div:first-child small {
+    color: var(---grey);
+    filter: brightness(3);
+    font-weight: bolder;
+}
+.avatar {
+    width: 50px;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    object-fit: cover;
+}
+
+.user-textbox {
+    margin-left: auto;
+    width: max-content;   
+}
+.user-textbox .avatar {
+    margin-left: auto;
+}
+.ai-textbox {
+    margin-right: auto;
+}
+.ai-textbox p {
+    background: var(---pink) !important;
+}
+#text-box.ai-textbox small {
+    order: 2;
+}
+.ai-textbox p {
+    margin-left: 1em;
+}
+
+#chat-input svg {
+    display: block;
+    margin-right: auto;
+
+}
+#chat-input { 
+    position: sticky;
+    bottom: 0;
+}
+#chat-input div {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    width: 100%;
+    background: black;
+    border-radius: 5px;
+}
+.chat-input {
+    width: 70%;
+    border: 3px solid var(---pink);
+    padding: 1em;
+    background: black !important;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    margin-left: auto;
+}
+
