@@ -6,10 +6,6 @@ export const sendChat = createAsyncThunk(
     async (message, {rejectWithValue}) => {
         try {
             const KEY = process.env.REACT_KEY
-<<<<<<< HEAD
-=======
-            console.log("React,key", KEY)
->>>>>>> ebc09e48d578ee2294553ae01529261c99d4d393
             // validate data
             if  (!message || !message.trim()) {
                 return ["please send a message", "please send a message"]

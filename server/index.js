@@ -2,6 +2,7 @@
 const express = require("express");
 const cors = require("cors");
 const cookieParser = require("cookie-parser");
+require("dotenv").config()
 
 // files
 const connectDB = require("./config/db");
@@ -10,8 +11,7 @@ const apiRoutes = require("./routes/apiRoutes");
 const app = express();
 const PORT = 4000;
 const whitelist = [
-  "https://ai-chat-app-front.vercel.app",
-  "https://ai-chat-app-front.vercel.app/"
+  "http://localhost:3000"
 ];
 const corsoptions = {
   origin: function (origin, callback) {
