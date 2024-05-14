@@ -5,7 +5,7 @@ export const sendChat = createAsyncThunk(
     "chats/sendChats", 
     async (message, {rejectWithValue}) => {
         try {
-            const KEY = process.env.KEY
+            const KEY = process.env.REACT_KEY
             console.log(KEY)
             // validate data
             if  (!message || !message.trim()) {
