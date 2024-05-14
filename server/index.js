@@ -15,13 +15,10 @@ const whitelist = [
 ];
 const corsoptions = {
   origin: function (origin, callback) {
-    if (!origin) {
-      return callback(null, true);
-    }
+    
     if (whitelist.indexOf(origin) !== -1) {
       return callback(null, true);
     } else {
-      console.log(whitelist.indexOf(origin));
       return callback(new Error("not allowed by cors"));
     }
   },

@@ -4,6 +4,7 @@ async function deleteMany() {
     try {
         await connectDB()
         await PostModel.deleteMany({})
+        console.log("here")
     }
     catch(e) {
         console.log(e)
