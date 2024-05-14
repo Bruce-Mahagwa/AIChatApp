@@ -4,7 +4,6 @@ import { useDispatch, useSelector } from "react-redux";
 import {sendChat} from "../../ReduxStore/Actions";
 import { saveUserMessage} from "../../ReduxStore/Slice";
 import { IoReloadOutline } from "react-icons/io5";
-import { Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
 
 const Input = () => {
     const [message, setMessage] = useState("");
