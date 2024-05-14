@@ -8,6 +8,7 @@
     padding: 1em;
     padding-bottom: 0.1em;
     overflow-y: scroll;
+    min-width: 90vh;
 }
 #chatbox::-webkit-scrollbar {
     width: 10px;
