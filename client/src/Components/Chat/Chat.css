@@ -97,3 +97,9 @@
     margin-left: auto;
 }
 
+/* loading and error css */
+#loading, #error {
+    margin-top: 1em;
+    text-align: center;
+    font-weight: bolder;
+}
