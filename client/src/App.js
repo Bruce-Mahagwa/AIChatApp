@@ -5,7 +5,9 @@ import ChatPage from './Pages/Chat/ChatPage';
 import axios from "axios"
 import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
-  axios.defaults.baseURL = "http://localhost:4000"
+  // axios.defaults.baseURL = "http://localhost:4000"
+  axios.defaults.baseURL = "https://ai-chat-app-backend-sigma.vercel.app"
+
   return (
     <>
       <HeaderPage />
