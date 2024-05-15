@@ -56,4 +56,12 @@ ul {
   #main-layout {
     grid-template-columns: 1fr 3fr;
   }
+  body {
+    font-size: 1.2rem !important;
+  }
+}
+@media screen and (min-width: 1700px) {
+  body {
+    font-size: 1.4rem !important;
+  }
 }
