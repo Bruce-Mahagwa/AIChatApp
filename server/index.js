@@ -11,7 +11,8 @@ const apiRoutes = require("./routes/apiRoutes");
 const app = express();
 const PORT = 4000;
 const whitelist = [
-  "http://localhost:3000"
+  "http://localhost:3000",
+  "https://ai-chat-app-front.vercel.app"
 ];
 const corsoptions = {
   origin: function (origin, callback) {
