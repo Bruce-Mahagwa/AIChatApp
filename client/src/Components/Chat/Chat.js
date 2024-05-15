@@ -51,7 +51,7 @@ const Chat = () => {
                 <img src = {loadingImg} alt = "loading gif" />
             </div>}
             {error && <div id = "error">
-                <p>We have encountered an error. Please reload the page</p>
+                <p>We have encountered an error. It often occurs when a page is first loaded in vercel. Please reload the page.</p>
                 <img src = {errorImg} alt = "error gif" />    
             </div>}
             {/* jsx to show during loading */}
